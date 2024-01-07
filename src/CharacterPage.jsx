@@ -36,10 +36,6 @@ const CharacterPage = () => {
     setFilteredCharacters(filteredResults);
   }, [searchTerm, characters]);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
